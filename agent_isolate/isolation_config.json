@@ -1,0 +1,30 @@
+{
+  "contamination_keywords": [
+    "generated content",
+    "artificial intelligence",
+    "automated response"
+  ],
+  "ai_generated_patterns": [
+    "this content was generated",
+    "automatically created",
+    "ai-powered response"
+  ],
+  "trusted_domains": [
+    "trusted-cdn.com",
+    "verified-source.net"
+  ],
+  "preservation_threshold": 0.3,
+  "max_items_per_section": 5,
+  "enable_logging": true,
+  "language": "en",
+  "domain": "general",
+  "custom_patterns": [
+    {
+      "name": "marketing_spam",
+      "patterns": ["buy now", "limited offer", "act fast"],
+      "language": "en",
+      "domain": "marketing",
+      "severity": "high"
+    }
+  ]
+}

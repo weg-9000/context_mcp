@@ -1,0 +1,32 @@
+# Agent Logger - 개발 및 테스트 의존성
+
+# 기본 requirements.txt 포함
+-r requirements.txt
+
+# 테스트 프레임워크
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.0.0
+pytest-mock>=3.10.0
+
+# 코드 품질 도구
+flake8>=5.0.0
+black>=22.0.0
+isort>=5.10.0
+mypy>=1.0.0
+
+# 문서화
+sphinx>=5.0.0
+sphinx-rtd-theme>=1.0.0
+
+# 개발 도구
+pre-commit>=2.20.0
+tox>=4.0.0
+
+# 디버깅
+ipdb>=0.13.0
+ipython>=8.0.0
+
+# 성능 분석
+memory-profiler>=0.60.0
+line-profiler>=3.5.0 
