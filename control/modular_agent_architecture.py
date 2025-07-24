@@ -12,10 +12,9 @@ from agent_isolate.agent_isolation_plugins import PluginManager
 from agent_isolate.communication_isolator import UniversalCommunicationIsolator, DataTransferRequest
 from agent_isolate.session_manager import UniversalSessionManager, SessionConfig
 from agent_isolate.isolation_manager import UniversalIsolationManager
+from agent_isolate.config_manager import ConfigManager
 from agent_logger.hybridlogging import HybridLogger
 from agent_logger.logging_manager import LoggingManager
-from agent_logger.config_manager import ConfigManager
-
 
 class AgentFramework(Enum):
     """각 에이전트별 최적화된 프레임워크"""
@@ -156,6 +155,7 @@ class ModularAgent(ABC):
         self.session_manager = UniversalSessionManager()
         self.communication_isolator = UniversalCommunicationIsolator()
         self.config_manager = ConfigManager()
+        
         
         # 로깅 시스템
         self.logger = HybridLogger(config.agent_id)
