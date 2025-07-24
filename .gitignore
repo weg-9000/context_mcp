@@ -1,0 +1,11 @@
+# 환경 변수 파일
+.env
+
+# Pydantic 관련 캐시 혹은 가상환경
+# 예시로 venv, .venv 등을 함께 무시
+pydantic/
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/

@@ -8,7 +8,7 @@ from aiohttp import web
 import asyncio
 import uuid
 from typing import Any, Dict, List, Optional, Union
-from agent.modular_agent_architecture import AgentFramework
+from modular_agent_architecture import AgentFramework
 
 class A2AHTTPTransport:
     """HTTP 기반 A2A 통신 전송 계층"""
@@ -116,11 +116,11 @@ class OrchestratorAgent:
         return base_sequence
 
 class RetrieverAgent:
-    """정보 수집 에이전트 (CrewAI 기반)"""
+    """정보 수집 에이전트 (Langchain 기반)"""
     
     def __init__(self, agent_id: str = "retriever"):
         self.agent_id = agent_id
-        self.framework = AgentFramework.CREWAI
+        self.framework = AgentFramework.Langchain
         self.capabilities = ["web_search", "document_retrieval", "api_integration", "multimodal_input"]
         self.data_sources = {
             "web": ["google", "bing", "duckduckgo"],
